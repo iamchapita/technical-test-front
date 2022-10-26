@@ -16,7 +16,7 @@ h6 {
 	src: "/resources/fonts/Product Sans Bold.ttf";
 	font-weight: bold;
 	text-decoration: none;
-    color: black;
+	color: black;
 }
 
 span {
@@ -25,12 +25,6 @@ span {
 
 nav {
 	margin-top: 5px;
-}
-
-.profilePicture {
-	border-radius: 50%;
-	width: 36px;
-	height: 36px;
 }
 
 .bold {
@@ -58,45 +52,60 @@ nav {
 	margin-left: 15px;
 }
 
-.nav-item{
-    border-width: 1px;
-    border-radius: 30px;
-    padding-left: 10px;
+.nav-item {
+	border-width: 1px;
+	border-radius: 30px;
+	padding-left: 10px;
 }
 
-.nav-item:hover{
-    background-color: rgb(243, 243, 243);
+.nav-item:hover {
+	background-color: rgb(243, 243, 243);
 }
 
-.material-symbols-outlined{
-    margin-top: 7px;
-    margin-bottom: 7px;
+.material-symbols-outlined {
+	margin-top: 7px;
+	margin-bottom: 7px;
 }
 
 .menuItem {
-    position: relative;
-    top: -7px;
-    left: 8px;
-    color: black;
-    text-decoration: none;
+	position: relative;
+	top: -7px;
+	left: 8px;
+	color: black;
+	text-decoration: none;
 }
 
 .container {
-    text-align: end;
-    letter-spacing: 20px;
+	text-align: end;
+	letter-spacing: 20px;
+}
+
+.dropdown-toggle {
+	background: none;
+	border: 0;
+	color: inherit;
+	/* cursor: default; */
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	padding: 0;
+	-webkit-user-select: none; /* for button */
+	-webkit-appearance: button; /* for input */
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 #rightItems {
 	margin-right: 25px;
-    display: grid;
-    grid-auto-flow: column;
+	display: grid;
+	grid-auto-flow: column;
 }
 
 #icons {
-    margin-right: 25px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 25px
+	margin-right: 25px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 25px;
 }
 
 #leftItems {
@@ -114,4 +123,10 @@ nav {
 	margin-right: 25px;
 	margin-left: 25px;
 	margin-top: 80px;
+}
+
+#profilePicture {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
 }
