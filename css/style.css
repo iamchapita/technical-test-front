@@ -31,6 +31,10 @@ nav {
 	font-style: bold;
 }
 
+.card{
+    margin-top: 10px;
+}
+
 .card-text {
 	display: inline-block;
 	overflow: hidden;
@@ -95,6 +99,43 @@ nav {
 	-ms-user-select: none;
 }
 
+.dropdown-menu {
+    display: block;
+    white-space: nowrap;
+}
+
+.profilePicture {
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+}
+
+.profileList{
+    display: inline;
+    grid-auto-flow: column;
+}
+
+.dropdown-item{
+    margin-left: 50px;
+    margin-top: -40px
+}
+
+.option{
+    margin-top: 25px;
+    margin-left: 50px;
+    height: 70px;
+    width: 300px;
+}
+
+.row {
+
+}
+
+#personAdd{
+    margin-left: 14px;
+    margin-top: -35px;
+}
+
 #rightItems {
 	margin-right: 25px;
 	display: grid;
@@ -123,10 +164,4 @@ nav {
 	margin-right: 25px;
 	margin-left: 25px;
 	margin-top: 80px;
-}
-
-#profilePicture {
-	border-radius: 50%;
-	width: 36px;
-	height: 36px;
 }
