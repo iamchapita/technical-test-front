@@ -81,8 +81,9 @@ nav {
     text-decoration: none;
 }
 
-.footerIcons {
-
+.container {
+    text-align: end;
+    letter-spacing: 20px;
 }
 
 #rightItems {
