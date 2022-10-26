@@ -58,18 +58,39 @@ function loadProfileList(archive) {
 			"</a></li></div>";
 	}
 
-    // var dropdownItems = document.getElementsByClassName('dropdown-item');
-
-    // for (var i = 0; i < dropdownItems.length; i++) {
-    //     dropdownItems[i].addEventListener("click", function () {
-    //         loadProfilePicture(archive, i);
-    //         loadCourses(archive, i);
-    //     });
-    // }
-
-	dropdown.innerHTML +=
+    dropdown.innerHTML +=
 		"<div class='noProfileList'><li class='option'> <span class='material-symbols-outlined' id='personAdd'>person_add</span> <a class='dropdown-item' href='#'>Agregar Instructor</a></li></div>";
 
 	dropdown.innerHTML +=
 		"<div class='noProfileList'><li class='option'><a class='dropdown-item'>Privacy Police • Terms of Service</a></li></div>";
+}
+
+function saveClass(archive){
+    var imgTag = document.getElementsByClassName("profilePicture");
+	imgTag = imgTag[0];
+
+    var className = document.getElementById('className').value;
+    var code = document.getElementById('code').value;
+    var section = document.getElementById('section').value;
+    var description = document.getElementById('description').value;
+
+    var profiles = ['goku', 'vegeta', 'patricio'];
+
+    var index = 0;
+    for (var i = 0; i < archive.length; i++) {
+		if (imgTag.src.includes(profiles[i])){
+            index = i;
+        }
+    }
+
+    var classDetails = {
+        nombreClase: className,
+        codigo: code,
+        seccion: section,
+        descripcion: description
+    };
+
+    archive[index]['clases'].push(classDetails);
+
+
 }

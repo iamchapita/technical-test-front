@@ -61,17 +61,13 @@
         <!-- Right Zone -->
         <div id="rightItems">
             <div id="icons">
-                <span class="material-symbols-outlined">
-                    add
-                </span>
-                <span class="material-symbols-outlined">
-                    apps
-                </span>
+                <span class='material-symbols-outlined' data-bs-toggle='modal' data-bs-target='#staticBackdrop''>add</span>
+                <span class=' material-symbols-outlined'>apps</span>
             </div>
             <div class="dropdown">
                 <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static"
                     aria-expanded="false">
-                    <img class="profilePicture">
+                    <img class="profilePicture" id="P">
                 </button>
                 <ul class="dropdown-menu  dropdown-menu-end dropdown-menu-sm-end dropdown-menu-lg-end"
                     id="dropdownMenu">
@@ -116,6 +112,32 @@
     </nav>
 
     <!-- Body -->
+    <div class='modal fade' id='staticBackdrop' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1'
+        aria-labelledby='staticBackdropLabel' aria-hidden='true'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h1 class='modal-title fs-5' id='staticBackdropLabel'>Modal title</h1>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <label class='form-label'>Nombre de la Clase</label>
+                    <input required type='text' class='form-control' id='className' aria-describedby='emailHelp'>
+                    <label class='form-label'>Código</label>
+                    <input required type='text' class='form-control' id='code' aria-describedby='emailHelp'>
+                    <label class='form-label'>Sección</label>
+                    <input required type='text' class='form-control' id='section' aria-describedby='emailHelp'>
+                    <label class='form-label'>Descripcion</label>
+                    <input required type='text' class='form-control' id='description' aria-describedby='emailHelp'>
+
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>
+                    <button type='button' class='btn btn-primary' onclick="saveClass(classroom);">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="bodyContainer">
         <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-6 row-cols-xxl-8" id="row">
 
@@ -130,7 +152,7 @@
     <script type="text/javascript">
         loadProfileList(classroom);
     </script>
-    
+
 </body>
 
 </html>
