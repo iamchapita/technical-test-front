@@ -1,0 +1,89 @@
+a:any-link {
+	text-decoration: none !important;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Product Sans-Bold", sans-serif;
+	src: "/resources/fonts/Product Sans Bold.ttf";
+	font-weight: bold;
+	text-decoration: none;
+}
+
+span {
+	cursor: pointer;
+}
+
+nav {
+	margin-top: 5px;
+}
+
+.profilePicture {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+}
+
+.bold {
+	font-style: bold;
+}
+
+.card-text {
+	display: inline-block;
+	overflow: hidden;
+	height: 100px;
+}
+
+.card-body {
+	height: 200px;
+	padding: 0, 0, 0, 0;
+}
+
+.footer {
+	height: 75px;
+	border-top: 1px solid;
+	border-color: rgb(189, 189, 189);
+}
+
+.navbar-brand {
+	margin-left: 15px;
+}
+
+#rightItems {
+	margin-right: 25px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#icons {
+    margin-right: 25px;
+    margin-top: 8px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 25px
+}
+
+#leftItems {
+	margin-left: 25px;
+	display: grid;
+	grid-auto-flow: column;
+}
+
+#classroomSpan {
+	margin-left: -10px;
+	margin-top: 10px;
+}
+
+#bodyContainer {
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-top: 80px;
+}
