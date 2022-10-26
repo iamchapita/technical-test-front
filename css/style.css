@@ -94,7 +94,6 @@ nav {
 
 #icons {
     margin-right: 25px;
-    margin-top: 8px;
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 25px
