@@ -115,6 +115,11 @@ nav {
     grid-auto-flow: column;
 }
 
+.noProfileList{
+    display: inline;
+    grid-auto-flow: column;
+}
+
 .dropdown-item{
     margin-left: 50px;
     margin-top: -40px
