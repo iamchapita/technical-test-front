@@ -16,6 +16,7 @@ h6 {
 	src: "/resources/fonts/Product Sans Bold.ttf";
 	font-weight: bold;
 	text-decoration: none;
+    color: black;
 }
 
 span {
@@ -56,6 +57,30 @@ nav {
 .navbar-brand {
 	margin-left: 15px;
 }
+
+.nav-item{
+    border-width: 1px;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+
+.nav-item:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+.material-symbols-outlined{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.menuItem {
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 8px;
+    color: black;
+    text-decoration: none;
+}
+
 
 #rightItems {
 	margin-right: 25px;
